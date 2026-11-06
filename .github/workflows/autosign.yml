@@ -30,6 +30,10 @@ jobs:
     steps:
     - name: 检出代码
       uses: actions/checkout@v4
+    - name: Setup Chrome
+      uses: browser-actions/setup-chrome@latest
+      with:
+          chrome-version: 156
       
     - name: 设置 Python 环境
       uses: actions/setup-python@v4
